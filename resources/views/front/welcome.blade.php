@@ -29,7 +29,7 @@
                       </label>
                     </div>
                     <div class="flex-1">
-                      <a class="btn btn-ghost normal-case text-xl" href="./">Daffa Blog</a>
+                      <a class="btn btn-ghost normal-case text-xl" href="./">Last Hope Blog</a>
                     </div>
                     <div class="flex-none">
                       <button
