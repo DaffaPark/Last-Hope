@@ -2,6 +2,8 @@
 
 
 @section('content')
+<link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+        <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
 <div
               class="flex items-center justify-between p-4 mb-8 text-sm font-semibold text-purple-100 bg-purple-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"
             >
@@ -51,9 +53,9 @@
                 <span class="text-gray-700">Description</span>
                 <textarea id="summernote" class="form-control block w-full mt-1 text-sm dark:border-gray-600  focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input" style="height:150px" name="desc" placeholder="desc">{{ $kategori->desc }}</textarea>
               </label>
-              <label class="block mt-4 text-sm">
+              <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" for="file_input">
                 <span class="text-gray-700">Image</span>
-                <input type="file" name="image" class="form-control block w-full mt-1 text-sm dark:border-gray-600  focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input" placeholder="image">
+                <input name="image" class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file" placeholder="image">
               </label>
               <h6 class="mt-4">SEO Tags :</h6>
               <label class="block mt-4 text-sm">
