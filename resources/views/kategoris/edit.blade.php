@@ -38,44 +38,44 @@
         @method('PUT')
   
               <div class="container px-6 mx-auto grid">
-    <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md ">
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Category Name</span>
-                <input type="text" name="name" value="{{ $kategori->name }}" class="form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" placeholder="name">
+                <span class="text-gray-700">Category Name</span>
+                <input type="text" name="name" value="{{ $kategori->name }}" class="form-control block w-full mt-1 text-sm dark:border-gray-600  focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input" placeholder="name">
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Slug</span>
-                <input type="text" name="slug" value="{{ $kategori->slug }}" class="form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" placeholder="slug">
+                <span class="text-gray-700">Slug</span>
+                <input type="text" name="slug" value="{{ $kategori->slug }}" class="form-control block w-full mt-1 text-sm dark:border-gray-600  focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input" placeholder="slug">
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Description</span>
-                <textarea id="summernote" class="form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" style="height:150px" name="desc" placeholder="desc">{{ $kategori->desc }}</textarea>
+                <span class="text-gray-700">Description</span>
+                <textarea id="summernote" class="form-control block w-full mt-1 text-sm dark:border-gray-600  focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input" style="height:150px" name="desc" placeholder="desc">{{ $kategori->desc }}</textarea>
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Image</span>
-                <input type="file" name="image" class="form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" placeholder="image">
+                <span class="text-gray-700">Image</span>
+                <input type="file" name="image" class="form-control block w-full mt-1 text-sm dark:border-gray-600  focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input" placeholder="image">
               </label>
               <h6 class="mt-4">SEO Tags :</h6>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Meta Title</span>
-                <input type="text" name="meta_title" value="{{ $kategori->meta_title }}" class="form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" placeholder="meta_title">
+                <span class="text-gray-700">Meta Title</span>
+                <input type="text" name="meta_title" value="{{ $kategori->meta_title }}" class="form-control block w-full mt-1 text-sm dark:border-gray-600  focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input" placeholder="meta_title">
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Meta Description</span>
-                <input type="text" name="meta_descs" value="{{ $kategori->meta_descs }}" class="form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" placeholder="meta_descs">
+                <span class="text-gray-700">Meta Description</span>
+                <input type="text" name="meta_descs" value="{{ $kategori->meta_descs }}" class="form-control block w-full mt-1 text-sm dark:border-gray-600  focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input" placeholder="meta_descs">
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Meta Keyword</span>
-                <input type="text" name="meta_keyword" value="{{ $kategori->meta_keyword }}" class="form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" placeholder="meta_keyword">
+                <span class="text-gray-700">Meta Keyword</span>
+                <input type="text" name="meta_keyword" value="{{ $kategori->meta_keyword }}" class="form-control block w-full mt-1 text-sm dark:border-gray-600  focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input" placeholder="meta_keyword">
               </label>
               <h6 class="mt-4">Status Mode :</h6>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Navbar Status</span>
-                <input type="checkbox" name="navbar_status" class=" text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" placeholder="navbar_status" {{ $kategori->navbar_status == 1 ? 'checked':'' }}>
+                <span class="text-gray-700">Navbar Status</span>
+                <input type="checkbox" name="navbar_status" class=" text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple" placeholder="navbar_status" {{ $kategori->navbar_status == 1 ? 'checked':'' }}>
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Status</span>
-                <input type="checkbox" name="status" class=" text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" placeholder="status" {{ $kategori->status == 1 ? 'checked':'' }}>
+                <span class="text-gray-700">Status</span>
+                <input type="checkbox" name="status" class=" text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple" placeholder="status" {{ $kategori->status == 1 ? 'checked':'' }}>
               </label>
               <button type="submit" class="mt-4 ml-2 mb-2 px-3 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">Submit</button>
               <a class="mt-4 ml-2 mb-2 px-3 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" href="{{ route('kategoris.index') }}">Back</a>

@@ -35,17 +35,17 @@
 
 {!! Form::open(array('route' => 'roles.store','method'=>'POST')) !!}
 <div class="container px-6 mx-auto grid">
-            <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md">
               <label class="block mt-4 text-sm">
               <strong>Name:</strong>
-              {!! Form::text('name', null, array('placeholder' => 'Name','class' => 'form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input')) !!}
+              {!! Form::text('name', null, array('placeholder' => 'Name','class' => 'form-control block w-full mt-1 text-sm focus:border-purple-400 focus:outline-none focus:shadow-outline-purple  form-input')) !!}
 </label>
 <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group mt-4">
             <strong>Permission:</strong>
             <br/>
             @foreach($permission as $value)
-                <label>{{ Form::checkbox('permission[]', $value->id, false, array('class' => 'name text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray')) }}
+                <label>{{ Form::checkbox('permission[]', $value->id, false, array('class' => 'name text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple ')) }}
                 {{ $value->name }}</label>
             <br/>
             @endforeach

@@ -37,9 +37,9 @@
     	@csrf
         @method('PUT')
         <div class="container px-6 mx-auto grid">
-    <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md ">
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Category</span>
+                <span class="text-gray-700 ">Category</span>
                 <select name="kategori_id" class="form-control">
                   <option value="">-- Select Category --</option>
                   @foreach ($kategori as $cateitem)
@@ -50,37 +50,37 @@
                 </select>
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Posts Name</span>
+                <span class="text-gray-700">Posts Name</span>
                 <input type="text" name="name" value="{{ $post->name }}" class="form-control" placeholder="name">
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Slug</span>
+                <span class="text-gray-700">Slug</span>
                 <input type="text" name="slug" value="{{ $post->slug }}" class="form-control" placeholder="slug">
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Posts Description</span>
+                <span class="text-gray-700">Posts Description</span>
                 <textarea class="form-control" style="height:150px" name="desc" id="summernote" placeholder="desc">{!! $post->desc !!}</textarea>
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Youtube Iframe Link</span>
+                <span class="text-gray-700">Youtube Iframe Link</span>
                 <input type="text" name="yt_iframe" value="{{ $post->yt_iframe }}" class="form-control" placeholder="yt_iframe">
               </label>
               <h6 class="mt-4">SEO Tags :</h6>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Meta Title</span>
+                <span class="text-gray-700">Meta Title</span>
                 <input type="text" name="meta_title" value="{!! $post->meta_title !!}" class="form-control" placeholder="meta_title">
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Meta Description</span>
+                <span class="text-gray-700">Meta Description</span>
                 <input type="text" name="meta_description" value="{!! $post->meta_description !!}" class="form-control" placeholder="meta_description">
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Meta Keyword</span>
+                <span class="text-gray-700">Meta Keyword</span>
                 <input type="text" name="meta_keyword" value="{!! $post->meta_keyword !!}" class="form-control" placeholder="meta_keyword">
               </label>
               <h6 class="mt-4">Status Mode :</h6>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Status</span>
+                <span class="text-gray-700">Status</span>
                 <input type="checkbox" name="status" class=" text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" placeholder="status" {{ $post->status == 1 ? 'checked':'' }}>
               </label>
               <button type="submit" class="mt-4 ml-2 mb-2 px-3 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">Submit</button>

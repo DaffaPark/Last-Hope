@@ -38,47 +38,47 @@
     	@csrf
 
         <div class="container px-6 mx-auto grid tracking-wider leading-normal">
-    <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md ">
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Category</span>
-                <select name="kategori_id" class=" form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input">
+                <span class="text-gray-700">Category</span>
+                <select name="kategori_id" class=" form-control block w-full mt-1 text-sm   focus:border-purple-400 focus:outline-none focus:shadow-outline-purple  form-input">
                   @foreach ($kategori as $cateitem)
                   <option value="{{ $cateitem->id }}">{{ $cateitem->name }}</option> 
                   @endforeach
                 </select>
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Post Name</span>
-                <input type="text" name="name" class="form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" placeholder="name">
+                <span class="text-gray-700">Post Name</span>
+                <input type="text" name="name" class="form-control block w-full mt-1 text-sm   focus:border-purple-400 focus:outline-none focus:shadow-outline-purple  form-input" placeholder="name">
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Slug</span>
-                <input type="text" name="slug" class="form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" placeholder="slug">
+                <span class="text-gray-700">Slug</span>
+                <input type="text" name="slug" class="form-control block w-full mt-1 text-sm   focus:border-purple-400 focus:outline-none focus:shadow-outline-purple  form-input" placeholder="slug">
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Description</span>
-                <textarea class="form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" style="height:150px" name="desc" id="summernote" placeholder="desc"></textarea>
+                <span class="text-gray-700">Description</span>
+                <textarea class="form-control block w-full mt-1 text-sm   focus:border-purple-400 focus:outline-none focus:shadow-outline-purple  form-input" style="height:150px" name="desc" id="summernote" placeholder="desc"></textarea>
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Youtube Iframe Link</span>
-                <input type="text" name="yt_iframe" class="form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" placeholder="yt_iframe">
+                <span class="text-gray-700">Youtube Iframe Link</span>
+                <input type="text" name="yt_iframe" class="form-control block w-full mt-1 text-sm   focus:border-purple-400 focus:outline-none focus:shadow-outline-purple  form-input" placeholder="yt_iframe">
               </label>
               <h6 class="mt-4">SEO Tags :</h6>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Meta Title</span>
-                <input type="text" name="meta_title" class="form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" placeholder="meta_title">
+                <span class="text-gray-700">Meta Title</span>
+                <input type="text" name="meta_title" class="form-control block w-full mt-1 text-sm   focus:border-purple-400 focus:outline-none focus:shadow-outline-purple  form-input" placeholder="meta_title">
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Meta Description</span>
-                <input type="text" name="meta_description" class="form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" placeholder="meta_description">
+                <span class="text-gray-700">Meta Description</span>
+                <input type="text" name="meta_description" class="form-control block w-full mt-1 text-sm   focus:border-purple-400 focus:outline-none focus:shadow-outline-purple  form-input" placeholder="meta_description">
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Meta Keyword</span>
-                <input type="text" name="meta_keyword" class="form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" placeholder="meta_keyword">
+                <span class="text-gray-700">Meta Keyword</span>
+                <input type="text" name="meta_keyword" class="form-control block w-full mt-1 text-sm   focus:border-purple-400 focus:outline-none focus:shadow-outline-purple  form-input" placeholder="meta_keyword">
               </label>
               <h6 class="mt-4">Status Mode :</h6>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Status</span>
+                <span class="text-gray-700">Status</span>
                 <input type="checkbox" name="status" class=" text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray" placeholder="status">
               </label>
               <button type="submit" class="mt-4 ml-2 mb-2 px-3 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">Submit</button>

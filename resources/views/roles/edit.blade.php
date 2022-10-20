@@ -35,10 +35,10 @@
 
 {!! Form::model($role, ['method' => 'PATCH','route' => ['roles.update', $role->id]]) !!}
 <div class="container px-6 mx-auto grid">
-            <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+            <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md">
               <label class="block mt-4 text-sm">
               <strong>Name:</strong>
-                {!! Form::text('name', null, array('placeholder' => 'Name','class' => 'form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input')) !!}
+                {!! Form::text('name', null, array('placeholder' => 'Name','class' => 'form-control block w-full mt-1 text-sm focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input')) !!}
 </label>
 <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">

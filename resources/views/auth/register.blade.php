@@ -1,9 +1,9 @@
 @extends('layouts.auth')
 
 @section('content')
-<div class="flex items-center min-h-screen p-6 bg-gray-50 dark:bg-gray-900">
+<div class="flex items-center min-h-screen p-6 bg-gray-50">
       <div
-        class="flex-1 h-full max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-xl dark:bg-gray-800">
+        class="flex-1 h-full max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-xl">
         <div class="flex flex-col overflow-y-auto md:flex-row">
           <div class="h-32 md:h-auto md:w-1/2">
           <img
@@ -21,14 +21,14 @@
           </div>
           <div class="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div class="w-full">
-              <h1 class="mb-4 text-xl font-semibold text-gray-700 dark:text-gray-200">
+              <h1 class="mb-4 text-xl font-semibold text-gray-700 d">
                 Create account
               </h1>
               <form method="POST" action="{{ route('register') }}">
                         @csrf
                 <label class="block text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Name</span>
-                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                <span class="text-gray-700">Name</span>
+                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror block w-full mt-1 text-sm focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
@@ -37,8 +37,8 @@
                                 @enderror
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Email</span>
-                <input id="email" type="email" class="form-control @error('name') is-invalid @enderror block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" name="email" value="{{ old('email') }}" required autocomplete="email">
+                <span class="text-gray-700">Email</span>
+                <input id="email" type="email" class="form-control @error('name') is-invalid @enderror block w-full mt-1 text-sm focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -47,8 +47,8 @@
                                 @enderror
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Password</span>
-                <input id="password" type="password" class="form-control @error('name') is-invalid @enderror block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" name="password" required autocomplete="new-password">
+                <span class="text-gray-700">Password</span>
+                <input id="password" type="password" class="form-control @error('name') is-invalid @enderror block w-full mt-1 text-sm focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input" name="password" required autocomplete="new-password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -57,17 +57,17 @@
                                 @enderror
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">
+                <span class="text-gray-700">
                   Confirm password
                 </span>
-                <input id="password-confirm" type="password" class="form-control form-control @error('name') is-invalid @enderror block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input" name="password_confirmation" required autocomplete="new-password">
+                <input id="password-confirm" type="password" class="form-control form-control @error('name') is-invalid @enderror block w-full mt-1 text-sm focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input" name="password_confirmation" required autocomplete="new-password">
               </label>
 
               <div class="flex mt-6 text-sm">
-                <label class="flex items-center dark:text-gray-400">
+                <label class="flex items-center">
                   <input
                     type="checkbox"
-                    class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                    class="text-purple-600 form-checkbox focus:border-purple-400 focus:outline-none focus:shadow-outline-purple"
                   />
                   <span class="ml-2">
                     I agree to the
@@ -84,7 +84,7 @@
               <hr class="my-8" />
 
               <button
-                class="flex items-center justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-white text-gray-700 transition-colors duration-150 border border-gray-300 rounded-lg dark:text-gray-400 active:bg-transparent hover:border-gray-500 focus:border-gray-500 active:text-gray-500 focus:outline-none focus:shadow-outline-gray"
+                class="flex items-center justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-white text-gray-700 transition-colors duration-150 border border-gray-300 rounded-lg active:bg-transparent hover:border-gray-500 focus:border-gray-500 active:text-gray-500 focus:outline-none focus:shadow-outline-gray"
               >
                 <svg
                   class="w-4 h-4 mr-2"
@@ -99,7 +99,7 @@
                 Github
               </button>
               <button
-                class="flex items-center justify-center w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-white text-gray-700 transition-colors duration-150 border border-gray-300 rounded-lg dark:text-gray-400 active:bg-transparent hover:border-gray-500 focus:border-gray-500 active:text-gray-500 focus:outline-none focus:shadow-outline-gray"
+                class="flex items-center justify-center w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-white text-gray-700 transition-colors duration-150 border border-gray-300 rounded-lg-400 active:bg-transparent hover:border-gray-500 focus:border-gray-500 active:text-gray-500 focus:outline-none focus:shadow-outline-gray"
               >
                 <svg
                   class="w-4 h-4 mr-2"
@@ -116,7 +116,7 @@
 
               <p class="mt-4">
                 <a
-                  class="text-sm font-medium text-purple-600 dark:text-purple-400 hover:underline"
+                  class="text-sm font-medium text-purple-600 hover:underline"
                   href="/login">
                   Already have an account? Login
                 </a>

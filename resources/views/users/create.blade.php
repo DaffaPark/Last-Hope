@@ -34,25 +34,25 @@
 
 {!! Form::open(array('route' => 'users.store','method'=>'POST')) !!}
 <div class="container px-6 mx-auto grid">
-    <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md ">
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Name</span>
+                <span class="text-gray-700 ">Name</span>
                 {!! Form::text('name', null, array('placeholder' => 'Name','class' => 'form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input')) !!}
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Email</span>
+                <span class="text-gray-700 ">Email</span>
                 {!! Form::text('email', null, array('placeholder' => 'Email','class' => 'form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input')) !!}
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Password</span>
+                <span class="text-gray-700 ">Password</span>
                 {!! Form::password('password', array('placeholder' => 'Password','class' => 'form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input')) !!}
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Confirm Password</span>
+                <span class="text-gray-700 ">Confirm Password</span>
                 {!! Form::password('confirm-password', array('placeholder' => 'Confirm Password','class' => 'form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input')) !!}
               </label>
               <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">
+                <span class="text-gray-700 ">
                   Roles
                 </span>
                 {!! Form::select('roles[]', $roles,[], array('class' => 'form-control block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input','multiple')) !!}
