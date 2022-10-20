@@ -46,7 +46,7 @@ class FrontPageController extends Controller
     public function latestPosts()
     {
         $allposts = Posts::where('status', '0')->orderBy('created_at','DESC')->paginate(5);
-        return view('front.post.latestposts', compact('allposts'));
+        return view('front.post.latestPosts', compact('allposts'));
     }
 
     public function viewPost(string $kategori_slug, string $post_slug)
