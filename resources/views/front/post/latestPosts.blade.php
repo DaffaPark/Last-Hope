@@ -114,7 +114,7 @@
               </div>
                   <div class="flex-1 p-3 md:py-[35]">
                     <div class="space-y-2 md:space-y-6">
-                    @foreach ($allposts as $latest_post_item)
+                    @forelse ($allposts as $latest_post_item)
                       <div class="card card-side bg-base-200 shadow-xl">
                         <div class="card-body">
                           <a href="{{ url('category/'.$latest_post_item->kategori->slug.'/'.$latest_post_item->slug) }}" class="card-title">
@@ -147,6 +147,10 @@
                           </p>
                         </div>
                       </div>
+                      @empty
+                      <h1 class="mx-4 my-4 text-center md:text-3xl font-extrabold">
+                  Sorry! There's No Latest Post Yet.
+                  </h1>
                       @endforeach
                      
                     </div>

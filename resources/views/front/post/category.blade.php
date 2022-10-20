@@ -115,7 +115,7 @@
                   @php
                         $categories = App\Models\Kategori::where('navbar_status', '0')->where('status', '0')->get();
                       @endphp
-                      @foreach ($categories as $cateitem) 
+                      @forelse ($categories as $cateitem) 
                     <a href="{{ url('category/'.$cateitem->slug) }}">
                       <div class="card w-80 h-40 bg-base-100 shadow-xl image-full">
                         <figure>
@@ -127,7 +127,11 @@
                         </div>
                       </div>
                     </a>
-                    @endforeach
+                    @empty
+                    <h1 class="mx-4 my-4 text-center md:text-3xl font-extrabold">
+                  Sorry! There's No Category Yet.
+                  </h1>
+                    @endforelse
                   </div>
                 </div>
               </div>
