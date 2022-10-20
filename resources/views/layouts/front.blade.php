@@ -3,7 +3,7 @@
     <!-- essential -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="http://last-hope-blog.herokuapp.com/css/blog.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
