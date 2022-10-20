@@ -38,7 +38,7 @@
                             @if($user->photo)
                                 <img src="{{ asset('user/profile/'.$user->photo) }}" class="img-thumbnail rounded mx-auto d-block">
                             @else
-                                <img src="{{ asset('img/profile.png') }}" class="img-thumbnail rounded mx-auto d-block">
+                                <img src="{{ asset('public/assets/img/profile.png') }}" class="img-thumbnail rounded mx-auto d-block">
                             @endif
                             
                         </div>
