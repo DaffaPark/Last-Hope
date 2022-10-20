@@ -71,7 +71,7 @@
                           <button class="px-3 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-red-600 border border-transparent rounded-md active:bg-red-600 hover:bg-red-700 focus:outline-none focus:shadow-outline-purple" type="button" data-modal-toggle="popup-modal">
                             Delete
                           </button>
-dark
+
                           <div id="popup-modal" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full">
                               <div class="relative p-4 w-full max-w-md h-full md:h-auto">
                                   <div class="relative bg-white rounded-lg shadow ">
