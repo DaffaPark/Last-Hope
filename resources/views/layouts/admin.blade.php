@@ -518,9 +518,9 @@
                   aria-haspopup="true"
                 >
                 @if($user->photo)
-                                <img src="/user/profile/'.$user->photo" class="object-cover w-8 h-8 rounded-full">
+                                <img src="{{ asset('user/profile/'.$user->photo) }}" class="object-cover w-8 h-8 rounded-full">
                             @else
-                                <img src="/img/profile.png'" class="object-cover w-8 h-8 rounded-full">
+                                <img src="{{ asset('public/assets/img/profile.png') }}" class="object-cover w-8 h-8 rounded-full">
                             @endif
                   
                 </button>
