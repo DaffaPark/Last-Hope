@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html :class="{ 'theme-dark': dark }" x-data="data()" lang="en">
+<html x-data="data()" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -132,13 +132,13 @@
   </head>
   <body>
     <div
-      class="flex dark:bg-gray-900"
+      class="flex "
       :class="{ 'overflow-hidden': isSideMenuOpen }">
       <!-- Desktop sidebar -->
-      <aside class="bg-gray-50 z-20 hidden w-64 overflow-y-auto dark:bg-gray-800 md:block flex-shrink-0">
-        <div class="py-4  text-gray-500 dark:text-gray-400">
+      <aside class="bg-gray-50 z-20 hidden w-64 overflow-y-auto  md:block flex-shrink-0">
+        <div class="py-4  text-gray-500 ">
           <a
-            class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200"
+            class="ml-6 text-lg font-bold text-gray-800 "
             href="#">
             Last Hope
           </a>
@@ -149,7 +149,7 @@
                 class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
                 aria-hidden="true"></span>
               <a
-                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
+                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800"
                 href="/home">
                 <svg
                   class="w-5 h-5"
@@ -171,7 +171,7 @@
                 class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
                 aria-hidden="true"></span>
               <a
-                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
+                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800"
                 href="/">
                 <svg
                   class="w-5 h-5"
@@ -194,7 +194,7 @@
             <!-- user -->
             <li class="relative px-6 py-3">
               <a
-                class="inline-flex items-center w-full text-sm font-semibold transition-colors text-gray-800 duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                class="inline-flex items-center w-full text-sm font-semibold transition-colors text-gray-800 duration-150 hover:text-gray-800 "
                 href="{{ route('users.index') }}">
                 <svg
                   class="w-5 h-5"
@@ -216,7 +216,7 @@
             <!-- Role -->
             <li class="relative px-6 py-3">
               <a
-                class="inline-flex items-center w-full text-sm font-semibold transition-colors text-gray-800 duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                class="inline-flex items-center w-full text-sm font-semibold transition-colors text-gray-800 duration-150 hover:text-gray-800 "
                 href="/roles">
                 <svg
                   class="w-5 h-5"
@@ -238,7 +238,7 @@
             <!-- Category list -->
             <li class="relative px-6 py-3">
               <a
-                class="inline-flex items-center w-full text-sm font-semibold transition-colors text-gray-800 duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                class="inline-flex items-center w-full text-sm font-semibold transition-colors text-gray-800 duration-150 hover:text-gray-800 "
                 href="{{ route('kategoris.index') }}">
                  <svg
                   class="w-5 h-5"
@@ -260,7 +260,7 @@
             @can('post-list')
             <li class="relative px-6 py-3">
               <a
-                class="inline-flex items-center w-full text-sm font-semibold transition-colors text-gray-800 duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                class="inline-flex items-center w-full text-sm font-semibold transition-colors text-gray-800 duration-150 hover:text-gray-800"
                 href="/posts">
                 <svg
                   class="w-5 h-5"
@@ -295,7 +295,7 @@
         class="fixed inset-0 z-10 flex items-end  sm:items-center sm:justify-center"
       ></div>
       <aside
-        class="fixed inset-y-0 z-20 flex-shrink-0 w-64 mt-16 overflow-y-auto bg-white dark:bg-gray-800 md:hidden"
+        class="fixed inset-y-0 z-20 flex-shrink-0 w-64 mt-16 overflow-y-auto bg-white md:hidden"
         x-show="isSideMenuOpen"
         x-transition:enter="transition ease-in-out duration-150"
         x-transition:enter-start="opacity-0 transform -translate-x-20"
@@ -457,9 +457,9 @@
         </div>
       </aside>
       <div class="flex flex-col flex-1 w-full">
-        <header class="z-10 py-4 bg-white shadow-md dark:bg-gray-800">
+        <header class="z-10 py-4 bg-white shadow-md ">
           <div
-            class="container flex items-center justify-between h-full px-6 mx-auto text-purple-600 dark:text-purple-300"
+            class="container flex items-center justify-between h-full px-6 mx-auto text-purple-600 "
           >
             <!-- Mobile hamburger -->
             <button
