@@ -161,8 +161,8 @@
  <h1 class=" ml-4 md:text-3xl font-extrabold">
                   Creator
                   </h1>
-  <div class=" dark:bg-gray-900 flex flex-wrap items-center justify-center">
-  <div class="container max-w-lg bg-base-200 rounded dark:bg-gray-800 shadow-lg transform duration-200 easy-in-out m-12">
+  <div class="flex flex-wrap items-center justify-center">
+  <div class="container max-w-lg bg-base-200 rounded shadow-lg transform duration-200 easy-in-out m-12">
     <div class="h-2/4 sm:h-64 overflow-hidden">
       <img class="w-full rounded-t"
         src="{{ asset('public/assets/img/insta2.jpg') }}"
@@ -175,7 +175,6 @@
           class="mx-auto object-cover rounded-full h-24 w-24 bg-white p-1" />
       </span>
     </div>
-    <div class="">
       <div class="px-7 mb-8">
         <h2 class="text-3xl font-bold  dark:text-gray-300">Daffa Park</h2>
         <p class="mt-2 dark:text-gray-400">Programmer</p>
@@ -190,7 +189,6 @@
 
         </div>
       </div>
-    </div>
   </div>
 </div>
                     
