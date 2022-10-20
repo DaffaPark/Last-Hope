@@ -176,9 +176,9 @@
       </span>
     </div>
       <div class="px-7 mb-8">
-        <h2 class="text-3xl font-bold  dark:text-gray-300">Daffa Park</h2>
-        <p class="mt-2 dark:text-gray-400">Programmer</p>
-        <p class="mt-2 dark:text-gray-300">just a normal hignschool student who loves programming but goes to sleep when he meets an error.</p>
+        <h2 class="text-3xl font-bold  ">Daffa Park</h2>
+        <p class="mt-2 ">Programmer</p>
+        <p class="mt-2 ">just a normal hignschool student who loves programming but goes to sleep when he meets an error.</p>
         <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mt-8">
            <a class="px-4" href="https://www.instagram.com/daffapark_/">
                     <i class="fab fa-instagram"></i>
