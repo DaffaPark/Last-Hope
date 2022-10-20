@@ -39,7 +39,7 @@
               </label>
               <label class="block mt-4 text-sm">
                 <span class="text-gray-700">Password</span>
-                <input id="password" type="password" class="form-control @error('email') is-invalid @enderror block w-full mt-1 text-sm  focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dform-input" name="password" required autocomplete="current-password">
+                <input id="password" type="password" class="form-control @error('email') is-invalid @enderror block w-full mt-1 text-sm  focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input" name="password" required autocomplete="current-password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
