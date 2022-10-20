@@ -181,10 +181,10 @@
         <p class="mt-2 dark:text-gray-400">Programmer</p>
         <p class="mt-2 dark:text-gray-300">just a normal hignschool student who loves programming but goes to sleep when he meets an error.</p>
         <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mt-8">
-           <a class="pl-6" href="https://www.instagram.com/daffapark_/">
+           <a class="px-4" href="https://www.instagram.com/daffapark_/">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a class="pl-6" href="https://github.com/DaffaPark">
+                <a class="px-4" href="https://github.com/DaffaPark">
                     <i class="fab fa-github"></i>
                 </a>
 
