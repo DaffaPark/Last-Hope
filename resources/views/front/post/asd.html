@@ -1,0 +1,85 @@
+<div class="flex-1 p-3 md:py-[35] ">
+            <div class="space-y-2 md:space-y-6">
+              <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                  <h1 class="md:text-3xl font-extrabold">
+                  {!! $post->name !!}
+                  </h1>
+                  <span class="text-xl" >Posted On : {{ $post->created_at->format('d-m-Y') }} </span> 
+                          <span class="text-xl">Posted By : {{ $post->user->name }} </span> 
+                  <div class="badge badge-secondary badge-lg">{!! $category->name !!}</div>
+                </div>
+              </div>
+              <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                  <figure>
+                  </figure>
+                  <div class="card-body">
+                    <p>
+                    {!! $post->desc !!}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              @if (session('message'))
+              <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 mt-4 shadow-md" role="alert">
+                <p>{{ session('message') }}</p>
+              </div>
+              @endif
+                  <!-- component -->
+                  <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                   <form action="{{ url('comments') }}" method="POST" class="mt-4">
+       @csrf
+      <label for="comment" class="block">
+        <input type="hidden" name="post_slug" value="{{ $post->slug }}" >
+        <textarea name="comment_body" id="comment" cols="30" rows="3" placeholder="Type your comment..." class="px-3 py-2 border shadow-sm border-gray-300 rounded-md w-full block placeholder:text-gray-400 placeholder-gray-500
+          focus:outline-none focus:ring-1 bg-gray-50 focus:ring-blue-600 focus:border-blue-600 text-sm"></textarea>
+      </label>
+      <button type="submit" class="mt-2  inline-flex items-center justify-center text-gray-100 font-medium leading-none
+             bg-blue-600 rounded-md py-2 px-3 border border-transparent transform-gpu hover:-translate-y-0.5 
+             transition-all ease-in duration-300 hover:text-gray-200 hover:bg-blue-700 text-sm">
+        Post comment
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 rotate-90" viewBox="0 0 20 20" fill="currentColor">
+          <path
+            d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+        </svg>
+      </button>
+    </form>
+    <div class="my-4">
+      <small class="text-base font-bold text-gray-700 ml-1">{{ $post->comments->count() }} comments</small>
+      <div class="flex flex-col mt-4">
+        <div class="flex flex-row mt-4">
+          @forelse ($post->comments as $comment)
+          <div class="flex-1 mt-2">
+            <div class="text-base font-semibold text-gray-500">
+              @if ($comment->user)
+              {{ $comment->user->name }}
+              @endif
+              <span class="text-sm font-normal text-gray-500">- {{ $comment->created_at->format('d-m-Y') }}</span>
+            </div>
+            <div class="text-sm text-gray-500">
+              {{ $comment->comment_body }}
+            </div>
+            <div class="flex items-center text-sm mt-1">
+              @if (Auth::Check() && Auth::id() == $comment->user_id)
+               <a href="/hapus/{{ $comment->id }}" class="text-blue-500 hover:text-blue-600">Delete</a>
+              @endif
+            </div>
+            @empty
+            <h6>There's no comment yet</h6>
+            @endforelse
+          </div>
+        </div>
+      </div>
+    </div>
+                </div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <p class="text-sm pl-4">© 1967 - 2022 Daffa Blog</p>
+            <p class="text-xs pl-4">
+              Sarissa theme design by
+              <a class="link" href="https://github.com/iozcelik">iozcelik</a>
+            </p>
+          </div>

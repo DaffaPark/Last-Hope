@@ -1,0 +1,195 @@
+@extends('layouts.front')
+@section('meta_descriptions', "$post->meta_description")
+@section('meta_keyword', "$post->meta_keyword")
+@section('title', "$post->meta_title")
+@section('content')
+<div class="lg:w-[60vw] max-w-screen-lg lg:pt-4 lg:p-4">
+<div class="navbar bg-base-100 lg:hidden sticky top-0 w-full z-50">
+                    <div class="flex-none">
+                      <label
+                        for="my-drawer-2"
+                        class="btn btn-square btn-ghost lg:hidden"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          class="inline-block w-5 h-5 stroke-current"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"
+                          ></path>
+                        </svg>
+                      </label>
+                    </div>
+                    <div class="flex-1">
+                      <a class="btn btn-ghost normal-case text-xl" href="./">Daffa Blog</a>
+                    </div>
+                    <div class="flex-none">
+                      <button
+                        data-set-theme="winter"
+                        class="btn btn-sm btn-ghost btn-square"
+                        data-act-class="btn-active"
+                      >
+                        <svg
+                          class="inline-block w-4 h-4 fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <title>ionicons-v5-q</title>
+                          <path
+                            d="M256,118a22,22,0,0,1-22-22V48a22,22,0,0,1,44,0V96A22,22,0,0,1,256,118Z"
+                          />
+                          <path
+                            d="M256,486a22,22,0,0,1-22-22V416a22,22,0,0,1,44,0v48A22,22,0,0,1,256,486Z"
+                          />
+                          <path
+                            d="M369.14,164.86a22,22,0,0,1-15.56-37.55l33.94-33.94a22,22,0,0,1,31.11,31.11l-33.94,33.94A21.93,21.93,0,0,1,369.14,164.86Z"
+                          />
+                          <path
+                            d="M108.92,425.08a22,22,0,0,1-15.55-37.56l33.94-33.94a22,22,0,1,1,31.11,31.11l-33.94,33.94A21.94,21.94,0,0,1,108.92,425.08Z"
+                          />
+                          <path
+                            d="M464,278H416a22,22,0,0,1,0-44h48a22,22,0,0,1,0,44Z"
+                          />
+                          <path d="M96,278H48a22,22,0,0,1,0-44H96a22,22,0,0,1,0,44Z" />
+                          <path
+                            d="M403.08,425.08a21.94,21.94,0,0,1-15.56-6.45l-33.94-33.94a22,22,0,0,1,31.11-31.11l33.94,33.94a22,22,0,0,1-15.55,37.56Z"
+                          />
+                          <path
+                            d="M142.86,164.86a21.89,21.89,0,0,1-15.55-6.44L93.37,124.48a22,22,0,0,1,31.11-31.11l33.94,33.94a22,22,0,0,1-15.56,37.55Z"
+                          />
+                          <path
+                            d="M256,358A102,102,0,1,1,358,256,102.12,102.12,0,0,1,256,358Z"
+                          />
+                        </svg>
+                      </button>
+                      <button
+                        data-set-theme="garden"
+                        class="btn btn-sm btn-ghost btn-square"
+                        data-act-class="btn-active"
+                      >
+                        <svg
+                          class="inline-block w-4 h-4 fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                          />
+                        </svg>
+                      </button>
+                      <button
+                        data-set-theme="dark"
+                        class="btn btn-sm btn-ghost btn-square"
+                        data-act-class="btn-active"
+                      >
+                        <svg
+                          class="inline-block w-4 h-4 fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <title>ionicons-v5-j</title>
+                          <path
+                            d="M152.62,126.77c0-33,4.85-66.35,17.23-94.77C87.54,67.83,32,151.89,32,247.38,32,375.85,136.15,480,264.62,480c95.49,0,179.55-55.54,215.38-137.85-28.42,12.38-61.8,17.23-94.77,17.23C256.76,359.38,152.62,255.24,152.62,126.77Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex-1 p-3 md:py-[35] ">
+            <div class="space-y-2 md:space-y-6">
+              <div class="card bg-base-200 shadow-xl">
+                <div class="card-body">
+                  <h1 class="md:text-3xl font-extrabold">
+                  {!! $post->name !!}
+                  </h1>
+                  <span class="text-xl" >Posted On : {{ $post->created_at->format('d-m-Y') }} </span> 
+                          <span class="text-xl">Posted By : {{ $post->user->name }} </span> 
+                  <div class="badge badge-secondary badge-lg">{!! $category->name !!}</div>
+                </div>
+              </div>
+              <div class="card bg-base-200 shadow-xl mt-4">
+                <div class="card-body">
+                  <figure>
+                  </figure>
+                  <div class="card-body">
+                    <p>
+                    {!! $post->desc !!}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              @if (session('message'))
+              <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 mt-4 shadow-md" role="alert">
+                <p>{{ session('message') }}</p>
+              </div>
+              @endif
+                  <!-- component -->
+                  <div class="card bg-base-200 shadow-xl mt-4">
+                <div class="card-body">
+                   <form action="{{ url('comments') }}" method="POST" class="mt-4">
+       @csrf
+      <label for="comment" class="block">
+        <input type="hidden" name="post_slug" value="{{ $post->slug }}" >
+        <textarea name="comment_body" id="comment" cols="30" rows="3" placeholder="Type your comment..." class="px-3 py-2 border shadow-sm border-gray-300 rounded-md w-full block placeholder:text-gray-400 placeholder-gray-500
+          focus:outline-none focus:ring-1 bg-gray-50 focus:ring-blue-600 focus:border-blue-600 text-sm"></textarea>
+      </label>
+      <button type="submit" class="mt-2  inline-flex items-center justify-center text-gray-100 font-medium leading-none
+             bg-blue-600 rounded-md py-2 px-3 border border-transparent transform-gpu hover:-translate-y-0.5 
+             transition-all ease-in duration-300 hover:text-gray-200 hover:bg-blue-700 text-sm">
+        Post comment
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 rotate-90" viewBox="0 0 20 20" fill="currentColor">
+          <path
+            d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+        </svg>
+      </button>
+    </form>
+    <div class="my-4">
+      <small class="text-base font-bold text-gray-700 ml-1">{{ $post->comments->count() }} comments</small>
+      <div class="flex flex-col mt-4">
+        <div class="flex flex-row mt-4">
+         
+          <div class="flex-1 mt-2">
+             @forelse ($post->comments as $comment)
+            <div class="text-base font-semibold text-gray-500 text-lg">
+              @if ($comment->user)
+              {{ $comment->user->name }}
+              @endif
+              <span class="text-lg font-normal text-gray-500">| {{ $comment->created_at->format('d-m-Y') }}</span>
+            </div>
+            <div class="text-lg text-gray-500">
+              {{ $comment->comment_body }}
+            </div>
+            <div class="flex items-center text-lg mt-1">
+              @if (Auth::Check() && Auth::id() == $comment->user_id)
+               <a href="/hapus/{{ $comment->id }}" class="text-blue-500 hover:text-blue-600">Delete</a>
+              @endif
+            </div>
+            @empty
+            <h6>There's no comment yet</h6>
+            @endforelse
+          </div>
+        </div>
+      </div>
+    </div>
+                </div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <p class="text-sm pl-4">© 1967 - 2022 Daffa Blog</p>
+            <p class="text-xs pl-4">
+              Sarissa theme design by
+              <a class="link" href="https://github.com/iozcelik">iozcelik</a>
+            </p>
+          </div>
+</div>
+@endsection
