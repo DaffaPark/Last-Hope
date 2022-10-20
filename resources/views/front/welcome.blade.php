@@ -127,7 +127,7 @@
   <p class="font-bold text-sm uppercase">Services</p>
         <p class="text-3xl font-bold">Wanted to Post Your Last Hope? </p>
         <p class="text-2xl mb-10 leading-none">Contact Admin or Blog Manager.</p>
-        <a href="#" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
+        <a href="mailto:dfa123gm@gmail.com" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
          
     </div> <!-- container -->
       <br>
