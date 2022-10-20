@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="public/assets/css/tailwind.output.css" />
+    <link rel="stylesheet" href="/public/assets/css/tailwind.output.css" />
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
     <link href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
       defer
     ></script>
-    <script src="public/assets/js/init-alpine.js"></script>
+    <script src="/public/assets/js/init-alpine.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
@@ -26,8 +26,8 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
       defer
     ></script>
-    <script src="public/assets/js/charts-lines.js" defer></script>
-    <script src="public/assets/js/charts-pie.js" defer></script>
+    <script src="/public/assets/js/charts-lines.js" defer></script>
+    <script src="/public/assets/js/charts-pie.js" defer></script>
     <!-- include libraries(jQuery, bootstrap) -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

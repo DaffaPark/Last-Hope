@@ -40,8 +40,9 @@ class UserController extends Controller
      */
     public function create()
     {
+        $user = User::findOrFail(Auth::id());
         $roles = Role::pluck('name','name')->all();
-        return view('users.create',compact('roles'));
+        return view('users.create',compact('roles','user'));
     }
     
     /**
