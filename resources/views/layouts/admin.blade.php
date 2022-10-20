@@ -135,8 +135,8 @@
       class="flex "
       :class="{ 'overflow-hidden': isSideMenuOpen }">
       <!-- Desktop sidebar -->
-      <aside class="bg-gray-50 z-20 hidden w-64 overflow-y-auto  md:block flex-shrink-0">
-        <div class="py-4  text-gray-500 ">
+      <aside class=" z-20 hidden w-64 overflow-y-auto  md:block flex-shrink-0">
+        <div class="py-4 text-gray-500 ">
           <a
             class="ml-6 text-lg font-bold text-gray-800 "
             href="#">
