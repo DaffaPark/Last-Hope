@@ -9,13 +9,13 @@
           <div class="h-32 md:h-auto md:w-1/2">
             <img
               aria-hidden="true"
-              class="object-cover w-full h-full dark:hidden"
+              class="object-cover w-full h-full "
               src="{{ asset('public/assets/img/login-office.jpeg') }}"
               alt="Office"
             />
             <img
               aria-hidden="true"
-              class="hidden object-cover w-full h-full dark:block"
+              class="hidden object-cover w-full h-full "
               src="{{ asset('public/assets/img/login-office-dark.jpeg') }}"
               alt="Office"
             />
@@ -39,7 +39,7 @@
               </label>
               <label class="block mt-4 text-sm">
                 <span class="text-gray-700">Password</span>
-                <input id="password" type="password" class="form-control @error('email') is-invalid @enderror block w-full mt-1 text-sm  focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input" name="password" required autocomplete="current-password">
+                <input id="password" type="password" class="form-control @error('email') is-invalid @enderror block w-full mt-1 text-sm focus:border-purple-400 focus:outline-none focus:shadow-outline-purple form-input" name="password" required autocomplete="current-password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -47,7 +47,6 @@
                                     </span>
                                 @enderror
               </label>
-
               <!-- You should use a button here, as the anchor is only used for the example  -->
               <button type="submit"
                 class="block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
@@ -57,7 +56,7 @@
               <hr class="my-8" />
 
               <button
-                class="flex items-center justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 border border-gray-300 rounded-lg active:bg-transparent hover:border-gray-500 focus:border-gray-500 active:text-gray-500 focus:outline-none focus:shadow-outline-gray"
+                class="flex items-center justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-white text-gray-700 transition-colors duration-150 border border-gray-300 rounded-lg active:bg-transparent hover:border-gray-500 focus:border-gray-500 active:text-gray-500 focus:outline-none focus:shadow-outline-gray"
               >
                 <svg
                   class="w-4 h-4 mr-2"
@@ -72,7 +71,7 @@
                 Github
               </button>
               <button
-                class="flex items-center justify-center w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-white transition-colors duration-150 border border-gray-300 rounded-lg  active:bg-transparent hover:border-gray-500 focus:border-gray-500 active:text-gray-500 focus:outline-none focus:shadow-outline-gray"
+                class="flex items-center justify-center w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-white text-gray-700 transition-colors duration-150 border border-gray-300 rounded-lg  active:bg-transparent hover:border-gray-500 focus:border-gray-500 active:text-gray-500 focus:outline-none focus:shadow-outline-gray"
               >
                 <svg
                   class="w-4 h-4 mr-2"
@@ -97,7 +96,7 @@
               </p>
               <p class="mt-1">
                 <a
-                  class="text-sm font-medium text-purple-600hover:underline"
+                  class="text-sm font-medium text-purple-600 hover:underline"
                   href="/register"
                 >
                   Create account
