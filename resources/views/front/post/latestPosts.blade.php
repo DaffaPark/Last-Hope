@@ -146,12 +146,11 @@
                             vitae.
                           </p>
                         </div>
-                        @empty
+                      </div>
+                      @empty
                       <h1 class="mx-4 my-4 text-center md:text-3xl font-extrabold">
                   Sorry! There's No Post Yet.
                   </h1>
-                      </div>
-                      
                       @endforelse
                      
                     </div>
