@@ -166,7 +166,7 @@
          
           <div class="flex-1 mt-2">
              @forelse ($post->comments as $comment)
-            <div class="text-base font-semibold text-gray-500 text-lg">
+            <div class="font-semibold text-gray-500 text-lg">
               @if ($comment->user)
               {{ $comment->user->name }}
               @endif
