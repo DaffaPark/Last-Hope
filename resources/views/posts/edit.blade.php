@@ -87,10 +87,5 @@
               <a class="mt-4 ml-2 mb-2 px-3 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple" href="{{ route('posts.index') }}">Back</a>
     </div>
 </div>
-
-
     </form>
-
-
-<p class="text-center text-primary"><small>Tutorial by ItSolutionStuff.com</small></p>
 @endsection
