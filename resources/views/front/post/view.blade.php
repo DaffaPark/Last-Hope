@@ -136,7 +136,7 @@
 </svg>: {{ $post->user->name }} 
       </p> 
 
-    <p class="mb-6 px-2 py-1">
+    <p class="mb-6 px-2 py-1 container">
      {!! $post->desc !!}
     </p>
 
