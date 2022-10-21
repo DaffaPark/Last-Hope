@@ -595,7 +595,8 @@
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 <script type="text/javascript">
     $('#summernote').summernote({
-        height: 400
+        height: 400,
+        width:400
     });
 </script>
 <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
